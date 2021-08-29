@@ -1,15 +1,18 @@
+const LocationInfoBox = ({ id, title }) => {
+  return (
+    <div className="location-info">
+      <h6>X</h6>
+      <h2>Event Location Info</h2>
+      <ul>
+        <li>
+          ID: <strong>{id}</strong>
+        </li>
+        <li>
+          TITLE: <strong>{title}</strong>
+        </li>
+      </ul>
+    </div>
+  );
+};
 
-const LocationInfoBox = ({ info }) => {
-    return (
-        <div className='location-info'>
-            <h2>Event Location Info</h2>
-            <ul>
-                <li>ID: <strong>{info.id}</strong></li>
-                <li>TITLE: <strong>{info.title}</strong></li>
-                <li>SOURCE: <strong><a href={info.source}> {info.source}</a></strong></li>
-            </ul>
-        </div>
-    )
-}
-
-export default LocationInfoBox
+export default LocationInfoBox;

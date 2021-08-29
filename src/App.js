@@ -1,6 +1,7 @@
 import Map from "./components/Map";
 import { useState, useEffect } from "react";
 import Loader from './components/Loader'
+import ('./CSS/app.css')
 
 function App() {
   const [eventData, setEventData] = useState([])
@@ -12,7 +13,7 @@ function App() {
       const { events } = await res.json();
 
       setEventData(events)
-      console.log(events)
+      //console.log(events)
       setLoading(false)
   }, [])
 
